@@ -220,6 +220,7 @@ a:visited {
     color: #E06733;
     padding: 12px 40px;
     background: #EDF2EC;
+    cursor: pointer;
 }
 
 #service-gardens.selected {
@@ -509,6 +510,11 @@ input {
     -moz-transition: all .3s linear;
 }
 
+#contact_us a:link,
+a:visited {
+    color: #010201;
+}
+
 .main_section_price_content_gardens_picture {
     width: 152px;
     height: 174.99px;
@@ -782,7 +788,7 @@ input {
 }
 
 .header_burger span:nth-child(4) {
-    transform: translateY(24px);
+    transform: translateY(-8px);
 }
 
 .header.open .header_burger span:nth-child(2) {
@@ -820,7 +826,6 @@ input {
 
     .service_action {
         padding: 45px 0px 0px 0px;
-        width: 84%;
         display: flex;
         justify-content: space-between;
     }
@@ -904,6 +909,10 @@ input {
     .main_section_service_menu_h2 {
         font-size: 35px;
         line-height: 46px;
+    }
+
+    .service_action {
+        width: 84%;
     }
 
     #service-lawn {
@@ -1063,8 +1072,23 @@ input {
 }
 
 @media (max-width: 767px) {
+
+    @keyframes shows {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .header_burger {
         display: block;
+    }
+
+    .header_topbar_logo_paragraph {
+        padding-bottom: 6px;
     }
 
     .nav {
@@ -1080,6 +1104,7 @@ input {
 
     .nav_list {
         display: block;
+        padding-top: 50px;
     }
 
     .nav-item {
@@ -1097,8 +1122,18 @@ input {
 
     .header.open .nav {
         transform: translateX(100%);
+        animation: shows 1s;
         background-color: #EDF2EC;
-        right: 150px;
+        left: 0;
+        width: 50%;
+    }
+
+    .header.open .nav-item {
+        padding: 30px 0px;
+    }
+
+    .header.open .header_topbar {
+        justify-content: flex-end;
     }
 
     .header.open .header_navy {
@@ -1192,7 +1227,7 @@ input {
     }
 
     .header_container {
-        padding: 37px 26px 36px 26px;
+        padding: 37px 26px 27px 26px;
         display: flex;
     }
 
@@ -1286,7 +1321,7 @@ input {
     }
 
     .service_action {
-        padding: 36px 0px 0px 0px;
+        padding: 36px 0px 36px 0px;
     }
 
     #service_action_planting {
