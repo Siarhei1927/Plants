@@ -386,27 +386,27 @@ a:visited {
 }
 
 #accordion_button_basic {
-    padding: 0px 0px 7px 5px;
-}
-
-#accordion_button_up {
-    padding-left: 97px;
+    padding: 0px 0px 0px 15px;
 }
 
 #price_action_standart {
     padding: 0px 0px 4px 5px;
 }
 
+.up-basics {
+    padding-left: 97px;
+}
+
+.up-standart {
+    padding-left: 80px;
+}
+
+.up-procare {
+    padding-left: 75px;
+}
+
 #accordion_button_standart {
     padding: 0px 3px 2px 0px;
-}
-
-.standart #accordion_button_up {
-    padding-left: 75px;
-}
-
-.procare #accordion_button_up {
-    padding-left: 75px;
 }
 
 .price-action-paragraph {
@@ -421,6 +421,7 @@ a:visited {
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
+    padding-bottom: 10px;
 }
 
 .price-action-prices-actual {
@@ -445,16 +446,6 @@ a:visited {
     justify-content: space-around;
 }
 
-#price-action-prices-button {
-    padding: 3px 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #717171;
-    width: 86px;
-    height: 25px;
-}
-
 .price-action-button.open .price-action-text {
     transform: translateY(100%);
     display: flex;
@@ -470,8 +461,17 @@ input {
     background: #D9D9D9;
 }
 
-#price_action_basics {
-    padding: 0px 0px;
+#order-basic,
+#order-standart,
+#order-procare {
+    padding: 3px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    width: 86px;
+    height: 25px;
+    border: 2px solid black;
 }
 
 .main_section_price_content {
@@ -508,11 +508,6 @@ input {
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
-}
-
-#contact_us a:link,
-a:visited {
-    color: #010201;
 }
 
 .main_section_price_content_gardens_picture {
@@ -677,13 +672,20 @@ a:visited {
     color: #717171;
 }
 
-.main_section_contacts_content_button_content_container button {
-    width: 122px;
-    height: 26px;
+.main_section_contacts_content_button_content_container .call_us {
+    margin: 15px 0px 0px 95px;
     border: 1px solid #E06733;
     border-radius: 5px;
-    margin-left: 125px;
-    display: block;
+    background: #EDF2EC;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+    padding: 10px;
+    width: 50%;
 }
 
 .footer_icons_instagram {
@@ -983,6 +985,10 @@ a:visited {
         padding: 0px 0px 0px 5px;
     }
 
+    .up-standart {
+        padding-left: 66px;
+    }
+
     #price_action_basics {
         padding: 0px 2px 6px 4px;
     }
@@ -1192,10 +1198,9 @@ a:visited {
 
     .price-action-text_h {
         font-size: 15px;
-    }
-
-    #accordion_button_up {
-        padding-left: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .main_section_price_content_gardens_text {
@@ -1345,6 +1350,18 @@ a:visited {
         padding-bottom: 30px;
     }
 
+    .up-basics {
+        padding-left: 43px;
+    }
+
+    .up-standart {
+        padding-left: 29px;
+    }
+
+    .up-procare {
+        padding-left: 58px;
+    }
+
     .main_section_price_container {
         padding: 13px 79px 40px 79px;
     }
@@ -1379,6 +1396,9 @@ a:visited {
 
     .main_section_contacts_content_button_container {
         padding: 72px 0px 131px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main_section_contacts_content_picture_woman {
@@ -1391,18 +1411,19 @@ a:visited {
         padding: 16px 0px 14px 0px;
     }
 
-    .main_section_contacts_content_button_content_container button {
-        margin: 0px 0px 0px 55px;
+    .main_section_contacts_content_button_content_container .call_us {
+        margin: 15px 0px 0px 70px;
         border: 1px solid #E06733;
         border-radius: 5px;
         background: #EDF2EC;
         font-family: 'Inika';
         font-style: normal;
         font-weight: 700;
-        font-size: 10px;
+        font-size: 15px;
         line-height: 13px;
         text-align: center;
-        color: #717171;
+        color: black;
+        padding: 10px;
     }
 
     .main_section_contacts_content_button_content_container {
@@ -1410,15 +1431,15 @@ a:visited {
     }
 
     .main_section_contacts_content_button_content_container a {
-        color: #717171;
+        color: black;
     }
 
-    .procare #accordion_button_up {
-        padding-left: 23px;
+    .procare {
+        padding: 16px 40px 12px 40px;
     }
 
-    .standart #accordion_button_up {
-        padding-left: 45px;
+    .standart {
+        padding: 16px 40px 12px 40px;
     }
 }
 
