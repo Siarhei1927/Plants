@@ -58,9 +58,11 @@
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
                     <div class="main_action">
-                        <button class="button" id="main_action"><a href="#service">LEARN MORE</a></button>
+                        <button onclick="document.location='#service'" class="button" id="main_action">LEARN
+                            MORE</button>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="about" id="about_us">
             <div class="main_section_about_container">
@@ -85,9 +87,9 @@
                     <div class="main_section_service_menu_head">
                         <h2 class="main_section_service_menu_h2">Service and our <br>projects</h2>
                         <div class="service_action">
-                            <button click class="button service-button" id="service-gardens">Gardens</button>
-                            <button click class="button service-button" id="service-lawn">Lawn</button>
-                            <button click class="button service-button" id="service-planting">Planting</button>
+                            <button class="button service-button" id="service-gardens">Gardens</button>
+                            <button class="button service-button" id="service-lawn">Lawn</button>
+                            <button class="button service-button" id="service-planting">Planting</button>
                         </div>
                     </div>
                     <div class="plants_item">
@@ -161,8 +163,8 @@
                                     alt="button_picture">
                             </button>
                             <div class="price-action-text" id="basic-button">
-                                <h3 class="price-action-text_h">Basics <img class="accordion" id="accordion_button_up"
-                                        src="assets/accordion_btn_up.png" alt="button_picture" onclick="closePrice()">
+                                <h3 class="price-action-text_h">Basics <img class="accordion up-basics"
+                                        src="assets/accordion_btn_up.png" alt="button_picture" onclick="viewPrice()">
                                 </h3>
                                 <p class="price-action-paragraph">Release of Letraset sheets containing Lorem Ipsum
                                     passages, and more recently</p>
@@ -170,27 +172,24 @@
                                     <span class="price-action-prices-actual">&#36;</span><span
                                         class="price-action-prices-value">15</span> / per hour
                                 </div>
-                                <button id="price-action-prices-button"><a href="#contacts"
-                                        class="nav_link">Order</a></button>
+                                <button id="order-basic" onclick="document.location='#contacts'">Order</button>
                             </div>
                             <button class="button price-action-button" id="price_action_standart"
                                 onclick="viewPriceStandart()">
                                 Standard
-                                <img class="accordion" id="accordion_button_standart" src="assets/accordion_btn.png"
-                                    alt="button_picture">
+                                <img class="accordion" src="assets/accordion_btn.png" alt="button_picture">
                             </button>
                             <div class="price-action-text standart">
-                                <h3 class="price-action-text_h">Standart <img class="accordion" id="accordion_button_up"
+                                <h3 class="price-action-text_h">Standart <img class="accordion up-standart"
                                         src="assets/accordion_btn_up.png" alt="button_picture"
-                                        onclick="closePriceStandart()"></h3>
+                                        onclick="viewPriceStandart()"></h3>
                                 <p class="price-action-paragraph">Release of Letraset sheets containing Lorem Ipsum
                                     passages, and more recently</p>
                                 <div class="price-action-prices">
                                     <span class="price-action-prices-actual">&#36;</span><span
                                         class="price-action-prices-value">25</span> / per hour
                                 </div>
-                                <button id="price-action-prices-button"><a href="#contacts"
-                                        class="nav_link">Order</a></button>
+                                <button id="order-standart" onclick="document.location='#contacts'">Order</button>
                             </div>
                             <button class="button price-action-button" id="price_action_procare"
                                 onclick="viewPriceProcare()">
@@ -199,25 +198,24 @@
                                     alt="button_picture">
                             </button>
                             <div class="price-action-text procare">
-                                <h3 class="price-action-text_h">Pro care <img class="accordion" id="accordion_button_up"
+                                <h3 class="price-action-text_h">Pro care <img class="accordion up-procare"
                                         src="assets/accordion_btn_up.png" alt="button_picture"
-                                        onclick="closePriceProcare()"></h3>
+                                        onclick="viewPriceProcare()"></h3>
                                 <p class="price-action-paragraph">Release of Letraset sheets containing Lorem Ipsum
                                     passages, and more recently</p>
                                 <div class="price-action-prices">
                                     <span class="price-action-prices-actual">&#36;</span><span
                                         class="price-action-prices-value">35</span> / per hour
                                 </div>
-                                <button id="price-action-prices-button"><a href="#contacts"
-                                        class="nav_link">Order</a></button>
+                                <button id="order-procare" onclick="document.location='#contacts'">Order</button>
                             </div>
                         </div>
                     </div>
                     <div class="main_section_price_content_gardens">
                         <h2 class="main_section_price_content_gardens_text">Our best <span
                                 class="green_word">gardeners</span> are ready to help you</h2>
-                        <button class="button" id="contact_us">
-                            <a href="#contacts">Contact us</a>
+                        <button onclick="document.location='#contacts'" class="button" id="contact_us">
+                            Contact us
                         </button>
                         <img class="main_section_price_content_gardens_picture" src="assets/pricesleafs.png"
                             alt="pricesleafs">
@@ -237,17 +235,17 @@
                             <h2 class="main_section_contacts_content_text_h2">Contact us</h2>
                         </div>
                         <div class="main_section_contacts_content_button_container">
-                            <button class="button city" id="city" style="background: rgb(214, 231, 210)" ;
+                            <button class="button city" id="city" style="background: rgb(214, 231, 210)"
                                 onclick="viewCityList()"><span class="textCity">City</span>
                                 <img class="main_section_contacts_content_button_image" id="accordion_button_down"
                                     src="assets/accordion_btn.png" alt="button_image">
                             </button>
                             <div class="main_section_contacts_content_list">
                                 <ul class="main_section_contacts_content_list_city">
-                                    <li click class="city_item" id="canandaigua">Canandaigua, NY</li>
-                                    <li click class="city_item" id="nycity">New York City</li>
-                                    <li click class="city_item" id="yonkers">Yonkers, NY</li>
-                                    <li click class="city_item" id="sherill">Sherrill, NY</li>
+                                    <li class="city_item" id="canandaigua">Canandaigua, NY</li>
+                                    <li class="city_item" id="nycity">New York City</li>
+                                    <li class="city_item" id="yonkers">Yonkers, NY</li>
+                                    <li class="city_item" id="sherill">Sherrill, NY</li>
                                 </ul>
                             </div>
                             <div class="main_section_contacts_content_button_content_container canandaigua">
@@ -266,7 +264,8 @@
                                     <p class="main_section_contacts_content_button_content_city_adress">151 Charlotte
                                         Street</p>
                                 </div>
-                                <button class="button" id="call_us"><a href="tel:+1(585)393-00-01">Call us</a></button>
+                                <div class="button call_us"><a href="tel:+1(585)393-00-01">Call
+                                        us</a></div>
                             </div>
                             <div class="main_section_contacts_content_button_content_container nycity">
                                 <div class="main_section_contacts_content_button_content_cityname">
@@ -283,7 +282,8 @@
                                     <p class="main_section_contacts_content_button_content_city_adress">9 East 91st
                                         Street</p>
                                 </div>
-                                <button class="button" id="call_us"><a href="tel:+1(212)456-00-02">Call us</a></button>
+                                <div class="button call_us"><a href="tel:+1(212)456-00-02">Call
+                                        us</a></div>
                             </div>
                             <div class="main_section_contacts_content_button_content_container yonkers">
                                 <div class="main_section_contacts_content_button_content_cityname">
@@ -300,7 +300,8 @@
                                     <p class="main_section_contacts_content_button_content_city_adress">511 Warburton
                                         Ave</p>
                                 </div>
-                                <button class="button" id="call_us"><a href="tel:+1(914)678-00-03">Call us</a></button>
+                                <div class="button call_us"><a href="tel:+1(914)678-00-03">Call
+                                        us</a></div>
                             </div>
                             <div class="main_section_contacts_content_button_content_container sherill">
                                 <div class="main_section_contacts_content_button_content_cityname">
@@ -317,7 +318,8 @@
                                     <p class="main_section_contacts_content_button_content_city_adress">14 WEST Noyes
                                         BLVD</p>
                                 </div>
-                                <button class="button" id="call_us"><a href="tel:+1(315)908-00-04">Call us</a></button>
+                                <div class="button call_us"><a href="tel:+1(315)908-00-04">Call
+                                        us</a></div>
                             </div>
                         </div>
                     </div>
