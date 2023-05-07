@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter&display=swap" rel="stylesheet">
+    <link type="Image/x-icon" href="assets/favicon.png" rel="icon">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header_container">
             <div class="header_topbar">
                 <div class="header_topbar_logo">
                     <img class="header_topbar_logo_picture" src="assets/logo_vector.png" alt="logo">
@@ -35,7 +36,7 @@
                             <li class="nav-item"><a href="#about_us" class="nav_link">About us</a></li>
                             <li class="nav-item"><a href="#service" class="nav_link">Service</a></li>
                             <li class="nav-item"><a href="#prices" class="nav_link">Price</a></li>
-                            <li class="nav-item"><a href="#contacts" class="nav_link">Contacts</a></li>
+                            <li class="nav-item nav-item__last"><a href="#contacts" class="nav_link">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,16 +50,15 @@
                     <img class="main_section_welcome_picture" src="assets/leafs.png" alt="leafs">
                 </div>
                 <div class="main_section_welcome_content">
-                    <div class="main_section_welcome_content2">
-                        <h1 class="main_section_welcome_h1">We grow <span class="green_word">plants</span> and give you
-                            oxygen</h1>
-                        <p class="main_section_welcome_p">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting
-                            industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <div class="main_action">
-                            <button class="button" id="main_action">LEARN MORE</button>
-                        </div>
+                    <h1 class="main_section_welcome_h1">We grow
+                        <span class="green_word">plants</span> and give you oxygen
+                    </h1>
+                    <p class="main_section_welcome_p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <div class="main_action">
+                        <button class="button" id="main_action">LEARN MORE</button>
                     </div>
                 </div>
         </section>
@@ -373,9 +373,9 @@
             </div>
         </div>
     </footer>
-    <script defer src="index.js"></script>
-    <script defer src="service-button.js"></script>
-    <script defer src="contact-button.js"></script>
+    <script defer src="script/index.js"></script>
+    <script defer src="script/service-button.js"></script>
+    <script defer src="script/contact-button.js"></script>
 </body>
 
 </html>
